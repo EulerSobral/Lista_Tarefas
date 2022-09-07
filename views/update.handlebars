@@ -1,0 +1,11 @@
+<div class="update_div">
+    <h1 class="title_update">Atualizar Tarefa:</h1>
+    <form action="/update/tarefa", method="post" class="form_update">
+        <input type="hidden" name="id" value="{{tarefa.id}}">
+        <label for="tarefa">Nome da tarefa:</label> <br>
+        <input type="text" name="nome_tarefa" id="nome_tarefa" value="{{tarefa.nome_tarefa}}"> <br>
+        <label for="tarefa">Adiconar tarefa:</label> <br>
+        <input type="text" name="tarefa" id="tarefa" value="{{tarefa.tarefa}}"> <br>
+        <input type="submit" value="Atualizar">
+    </form> 
+</div>

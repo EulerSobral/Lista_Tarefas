@@ -1,0 +1,16 @@
+<h1 class="title_main">Lista Tarefas:</h1> 
+
+<div class="lista_container"> 
+    {{#each tarefa}}    
+        <div class="tarefa_container">   
+            <p class="nome_tarefa">{{this.nome_tarefa}}</p> 
+            <p class="tarefa"> {{this.tarefa}}</p>    
+             <div class="btn_lista">  
+                <form action="/delete/tarefa/{{this.id}}" method="post"> 
+                    <input type="submit" value="Deletar">
+                </form> 
+                <a class="link_update" href="/update/tarefa/{{this.id}}">Atualizar</a>
+            </div> 
+        </div> 
+    {{/each}}
+</div>
